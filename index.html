@@ -15,28 +15,47 @@
       <title>Google</title>
 
       <style>
-      .center {
-        margin: auto;
-        width: 50%;
-        padding: 10px;
+        body {
+          font-family: arial,sans-serif;
+          font-size: small;
         }
-        img .displayed {
-          margin-left: auto;
-          margin-right: auto;
+
+        nav {
+          padding-top: 10px;
+          padding-right: 20px;
+          color: #000;
         }
+
+        a {
+          color: #1a0dab;
+        }
+
+        a.nav-link {
+          color: #000;
+        }
+        a:visited {
+          color: #609;
+        }
+
+        .center {
+          margin: auto;
+          width: 60%;
+          padding: 150px;
+          }
+
+        .nav-icon {
+          height: 35px;
+          width: 35px;
+        }
+
         .container {
-          width: 300px;
-          padding: 25px;
+
+          padding: 20px;
           margin: 0 auto;
           text-align: center;
         }
-        footer {
-          width: 300px;
-          padding: 25px;
-          margin: 0 auto;
-        }
 
-        .icon {
+        .searchicon {
           height: 24px;
           width: 16px;
         }
@@ -49,31 +68,89 @@
           border-right-color: white;
         }
         .btn {
-          display: inline-block;
+          margin-right: 5px;
+          font-size: 13px;
+          font-weight: bold;
+          background-color: #f2f2f2;
+          color: #757575;
         }
+        .navbar-footer {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+        }
+
       </style>
     </head>
     <body>
+      <header>
+        <nav>
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link" href="https://mail.google.com/mail/?tab=wm">Gmail</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.google.com/imghp?hl=en&tab=wi">Images</a>
+            </li>
+            <li class="nav-item">
+              <img class="nav-icon" src="images/Google_apps.jpg">
+            </li>
+            <li class="nav-item">
+              <img class="nav-icon" src="images/Google_notifications_icon.jpg">
+            </li>
+            <li class="nav-item">
+              <img class="nav-icon" src="images/My_Google_icon.jpg">
+            </li>
+          </ul>
+        </nav>
+      </header>
       <div class="center">
-        <div class="center">
+
+        <div class="container">
           <img class="logo" src="images/googlelogo_color_272x92dp.png">
         </div>
-
-
-
         <div class="input-group mb-3">
           <input type="text" class="form-control">
           <div class="input-group-append">
-            <span class="input-group-text"><img class="icon" src="images/searchbyvoice.png"></span>
+            <span class="input-group-text"><img class="searchicon" src="images/searchbyvoice.png"></span>
           </div>
         </div>
 
         <div class="container">
-          <button type="button" class="btn btn-light">Google Search</button><button type="button" class="btn btn-light">I'm Feeling Lucky</button>
+          <button type="button" class="btn btn-light">Google Search</button>
+          <button type="button" class="btn btn-light">I'm Feeling Lucky</button>
+        </div>
+        <div class="container">
+          Google offered in: <a href="http://www.google.nl">Nederlands</a>
         </div>
       </div>
+      <footer>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-footer">
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.google.com/intl/en_zz/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.google.com/intl/en_zz/about/?utm_source=google.com&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.google.com/intl/en_zz/policies/privacy/?fg=1">Privacy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.google.com/intl/en_zz/policies/terms/?fg=1">Terms</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.google.com/preferences?hl=en">Settings</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </footer>
     </body>
-    <footer>
-      Google offered in: <a href="http://www.google.nl">Nederlands</a>
-    </footer>
   </html>
